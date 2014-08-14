@@ -5,7 +5,7 @@ class Deck
     @deck = []
       @@suits.each do |suit|
         @@ranks.each do |rank|
-          @deck << Card.new(rank, suit)
+          @deck << Card.new(rank, suit).card
         end
       end
   end  
